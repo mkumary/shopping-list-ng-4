@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-shopping-edit',
@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class ShoppingEditComponent implements OnInit {
 
   constructor() { }
-
+ @Output() toggleMenuChange: EventEmitter<{name:string, amount:number}> = new EventEmitter();
   ngOnInit() {
   }
 
+  addItem(name, amount) {
+  	this.toggleMenuChange.emit({name : name.value, amount : amount.value});
+   }
 }
