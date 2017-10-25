@@ -12,6 +12,11 @@ import { ReciepeComponent } from './main-container/recipes/recipe-list/recipe-it
 import { RecipeDetailComponent } from './main-container/recipes/recipe-list/recipe-detail/recipe-detail.component';
 import { ReceipeListComponent } from './main-container/recipes/recipe-list/receipe-list.component';
 import { ShoppingEditComponent } from './main-container/shoppinglist/shopping-edit/shopping-edit.component';
+import { SiteAComponent } from './site-a/site-a.component';
+import { SiteBComponent } from './site-b/site-b.component';
+import {RouterModule} from "@angular/router";
+import {appRoutes} from "./app.routes";
+import {GoogleAnalyticsEventsService} from "./google-analytics-events.service";
 
 
 @NgModule({
@@ -24,14 +29,20 @@ import { ShoppingEditComponent } from './main-container/shoppinglist/shopping-ed
     ReciepeComponent,
     RecipeDetailComponent,
     ReceipeListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    SiteAComponent,
+    SiteBComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(appRoutes),
+
   ],
-  providers: [],
+  providers: [
+GoogleAnalyticsEventsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
