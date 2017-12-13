@@ -20,7 +20,7 @@ username ='';
 }
   
   onbuttonCLicked(){
-this.username = '';
+    this.username = '';
   }
   submitEvent() {
     this.googleAnalyticsEventsService.emitEvent("testCategory", "testAction", "testLabel", 10);

@@ -4,8 +4,9 @@
       <a class="navbar-brand" href="#">Recipe Book</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="#">Recipes</a></li>
-      <li><a href="#">ShoppingList</a></li>
+      <li><a href="/profile">Profile</a>
+      <li><a href="#" (click)="onSelect($event, 'recipe')">Recipes</a></li>
+      <li><a href="#" (click)="onSelect($event, 'shoppinglist')">ShoppingList</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
     	<li class="dropdown">

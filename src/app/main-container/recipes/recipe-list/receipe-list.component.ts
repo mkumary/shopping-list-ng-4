@@ -15,9 +15,7 @@ export class ReceipeListComponent implements OnInit {
 
   ngOnInit() {
   }
-  onAddNewRecipe() {
-	 this.recipes.push(new Recipe('kheer', 'sweet Dish', 'https://www.bbcgoodfood.com/sites/default/files/styles/carousel_medium/public/recipe-collections/collection-image/2013/05/frying-pan-pizza-easy-recipe-collection.jpg?itok=naGPMoRQ'))
-  }
+  
   onAddRecipeItem(test){
     this.recipes.push(new Recipe(test.name,test.description, test.imagePath));
   }

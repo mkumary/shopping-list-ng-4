@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter,Output} from '@angular/core';
 
 @Component({
 selector : 'app-header',
@@ -7,7 +7,11 @@ styleUrls : ['header.component.css']
 })
 
 export class HeaderComponent{
-	constructor(){
-
+	@Output() featureSelected  = new EventEmitter<String>();
+	
+	onSelect($event, feature:String){
+		$event.preventDefault();
+		this.featureSelected.emit(feature);
 	}
+	
 }

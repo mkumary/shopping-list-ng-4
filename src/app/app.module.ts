@@ -17,6 +17,10 @@ import { SiteBComponent } from './site-b/site-b.component';
 import {RouterModule} from "@angular/router";
 import {appRoutes} from "./app.routes";
 import {GoogleAnalyticsEventsService} from "./google-analytics-events.service";
+import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ProfileHeaderComponent } from './profile/profile-header/profile-header.component';
+import { HeighlightTextDirective } from './heighlight-text.directive';
 
 
 @NgModule({
@@ -31,7 +35,11 @@ import {GoogleAnalyticsEventsService} from "./google-analytics-events.service";
     ReceipeListComponent,
     ShoppingEditComponent,
     SiteAComponent,
-    SiteBComponent
+    SiteBComponent,
+    HomeComponent,
+    ProfileComponent,
+    ProfileHeaderComponent,
+    HeighlightTextDirective
   ],
   imports: [
     BrowserModule,
