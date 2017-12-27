@@ -1,0 +1,25 @@
+.education ul li h3, .employment ul li h3 {
+    color: #636368;
+    font-family: "PT Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+.resume .education {
+    text-align: right;
+    padding-right: 50px;
+}
+.education ul li {
+    display: block;
+    margin: 20px 0;
+}
+ul li {
+    list-style: none;
+}
+.resume .employment {
+    text-align: left;
+    position: relative;
+    padding-left: 50px;
+}

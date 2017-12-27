@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';	
+let clevertap = (<any>window).clevertap;  
 
 @Component({
   selector: 'app-profile',
@@ -22,6 +23,10 @@ export class ProfileComponent implements OnInit {
 
   }
    ngOnInit() {
+     clevertap.event.push('e');
+  }
+  scrollTo($event){
+    window.scrollTo(0,document.querySelector($event.target.getAttribute('ng-href')).offsetTop);
   }
 
 }
