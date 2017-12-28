@@ -23,3 +23,16 @@ ul li {
     position: relative;
     padding-left: 50px;
 }
+.section-container{
+    text-align: center;
+}
+
+.company-info{
+    font-style: oblique;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.role-info{
+    
+}

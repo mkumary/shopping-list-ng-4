@@ -15,4 +15,5 @@ export class GoogleAnalyticsEventsService {
       eventValue: eventValue
     });
   }
+ 
 }
